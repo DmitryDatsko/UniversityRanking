@@ -12,7 +12,7 @@ using UniversityRanking.Data;
 namespace UniversityRanking.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240607123432_initial-migration")]
+    [Migration("20240607151128_initial-migration")]
     partial class initialmigration
     {
         /// <inheritdoc />
