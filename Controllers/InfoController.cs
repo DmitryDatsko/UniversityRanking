@@ -37,75 +37,36 @@ public class InfoController : ControllerBase
         return Ok(universities);
     }
     
-    [HttpGet("academic-reputation")]
-    public async Task<IActionResult> GetAcademicReputation()
+    [HttpGet("get-subject-by-id/{id}")]
+    public async Task<IActionResult> GetSubjectById(int id)
     {
-        var data = await _context.AcademicReputations.ToListAsync();
+        var data = await _context.MainSubjects.Include(i => i.AcademicReputations)
+            .Include(i => i.EmployerReputation)
+            .Include(i => i.Citation)
+            .Include(i => i.EmploymentResult)
+            .Include(i => i.ForeignStudentRatio)
+            .Include(i => i.InternationalTeachersRatio)
+            .Include(i => i.ForeignStudentRatio)
+            .Include(i => i.ResearchNetwork)
+            .Include(i => i.StudentStability)
+            .Where(ms =>
+                ms.AcademicReputations.MainSubjectId == id ||
+                ms.EmployerReputation.MainSubjectId == id ||
+                ms.Citation.MainSubjectId == id ||
+                ms.EmploymentResult.MainSubjectId == id ||
+                ms.ForeignStudentRatio.MainSubjectId == id ||
+                ms.InternationalTeachersRatio.MainSubjectId == id ||
+                ms.ForeignStudentRatio.MainSubjectId == id ||
+                ms.ResearchNetwork.MainSubjectId == id ||
+                ms.StudentStability.MainSubjectId == id)
+            .SingleOrDefaultAsync();
 
-        return Ok(data);
+        if (data != null)
+        {
+            return Ok(data);
+        }
+
+        return NotFound();
     }
     
-    [HttpGet("employer-reputation")]
-    public async Task<IActionResult> GetEmployerReputation()
-    {
-        var data = await _context.EmployerReputations.ToListAsync();
-
-        return Ok(data);
-    }
-    
-    [HttpGet("citation")]
-    public async Task<IActionResult> GetCitation()
-    {
-        var data = await _context.Citations.ToListAsync();
-
-        return Ok(data);
-    }
-    
-    [HttpGet("employer-results")]
-    public async Task<IActionResult> GetEmploymentResults()
-    {
-        var data = await _context.EmploymentResults.ToListAsync();
-
-        return Ok(data);
-    }
-    
-    [HttpGet("faculty-ratio")]
-    public async Task<IActionResult> GetFacultyRatio()
-    {
-        var data = await _context.FacultyStudentRatios.ToListAsync();
-
-        return Ok(data);
-    }
-    
-    [HttpGet("international-teachers")]
-    public async Task<IActionResult> GetInternationalTeachers()
-    {
-        var data = await _context.InternationalTeachersRatios.ToListAsync();
-
-        return Ok(data);
-    }
-    
-    [HttpGet("foreign-student")]
-    public async Task<IActionResult> GetForeignStudent()
-    {
-        var data = await _context.ForeignStudentRatios.ToListAsync();
-
-        return Ok(data);
-    }
-    
-    [HttpGet("research-network")]
-    public async Task<IActionResult> GetResearchNetwork()
-    {
-        var data = await _context.ResearchNetworks.ToListAsync();
-
-        return Ok(data);
-    }
-    
-    [HttpGet("student-stability")]
-    public async Task<IActionResult> GetStudentStability()
-    {
-        var data = await _context.StudentStability.ToListAsync();
-
-        return Ok(data);
-    }
 }
