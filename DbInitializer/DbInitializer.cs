@@ -27,11 +27,11 @@ public class DbInitializer : IDbInitializer
             {
                 new()
                 {
-                    LogoUrl = @"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brandcrowd.com%2Fblog%2Fharvard-university-logo-history%2F&psig=AOvVaw0B9VEZuDTIyeYmBwz_9Nex&ust=1717798964384000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDM5vqByIYDFQAAAAAdAAAAABAE",
+                    LogoUrl = @"https://tse1.mm.bing.net/th?id=OIG2.LDtcZbp9F.Fkxn48kukI&pid=ImgGn",
                     Title = "Academic reputation",
                     AcademicReputations = new()
                     {
-                        LogoUrl = @"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brandcrowd.com%2Fblog%2Fharvard-university-logo-history%2F&psig=AOvVaw0B9VEZuDTIyeYmBwz_9Nex&ust=1717798964384000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDM5vqByIYDFQAAAAAdAAAAABAE",
+                        LogoUrl = @"https://tse1.mm.bing.net/th?id=OIG2.LDtcZbp9F.Fkxn48kukI&pid=ImgGn",
                         AcademicReputationScore = 30.82,
                         Title = "Academic reputation",
                         FacultyQuality = 45.91,
@@ -43,7 +43,7 @@ public class DbInitializer : IDbInitializer
                 },
                 new()
                 {
-                    LogoUrl = @"https://nure.ua/wp-content/uploads/Benchmarking/4.-rating-and-payment.pdf;https://nure.ua/wp-content/uploads/Benchmarking/nakaz-pro-prodovzhennja-stroku-dii-kolektivnogo-dogovoru.pdf",
+                    LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.gGxBjRspfINeQVTbc8Xc?pid=ImgGn",
                     Title = "Employer Reputation",
                     EmployerReputation = new()
                     {

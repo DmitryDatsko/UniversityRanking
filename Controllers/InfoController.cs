@@ -36,7 +36,7 @@ public class InfoController : ControllerBase
 
         return Ok(universities);
     }
-    
+
     [HttpGet("get-subject-by-id/{id}")]
     public async Task<IActionResult> GetSubjectById(int id)
     {
@@ -68,5 +68,4 @@ public class InfoController : ControllerBase
 
         return NotFound();
     }
-    
 }
