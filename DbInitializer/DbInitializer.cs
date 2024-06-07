@@ -30,143 +30,54 @@ public class DbInitializer : IDbInitializer
                     LogoUrl = @"https://tse1.mm.bing.net/th?id=OIG2.LDtcZbp9F.Fkxn48kukI&pid=ImgGn",
                     Title = "Academic reputation",
                     Description = "The Academic Reputation page highlights the university's standing in the academic community. It showcases rankings, research output, and notable faculty achievements. This page also includes information on prestigious awards and recognitions received by the university. Detailed statistics on publication citations and collaborative projects are featured. Testimonials from academic peers and alumni further emphasize the institution's reputation. This comprehensive overview underscores the university's commitment to academic excellence and innovation.",
-                    AcademicReputations = new()
-                    {
-                        LogoUrl = @"https://tse1.mm.bing.net/th?id=OIG2.LDtcZbp9F.Fkxn48kukI&pid=ImgGn",
-                        AcademicReputationScore = 30.82,
-                        Title = "Academic reputation",
-                        FacultyQuality = 45.91,
-                        StudentSatisfaction = 87.65,
-                        InternationalCollaboration = 30.0,
-                        AwardsAndRecognitions = "-",
-                        Year = 2024
-                    }
                 },
                 new()
                 {
                     LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.gGxBjRspfINeQVTbc8Xc?pid=ImgGn",
                     Title = "Employer Reputation",
                     Description = "The Employer Reputation page underscores the university's strong connections with top employers globally. It features data on graduate employment rates and notable employer partnerships. This page also highlights testimonials from employers who regularly hire graduates from the university. Information on career fairs, internships, and co-op programs is provided. Additionally, it includes statistics on alumni success and career progression. This detailed overview demonstrates the university's commitment to producing highly employable graduates.",
-                    EmployerReputation = new()
-                    {
-                        EvidenceUrl = @"https://nure.ua/wp-content/uploads/Benchmarking/4.-rating-and-payment.pdf;https://nure.ua/wp-content/uploads/Benchmarking/nakaz-pro-prodovzhennja-stroku-dii-kolektivnogo-dogovoru.pdf",
-                        ExpenditurePerEmployees = 326_346_245.00,
-                        LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.gGxBjRspfINeQVTbc8Xc?pid=ImgGn",
-                        AverageSalary = 326_346_245.00/1670,
-                        Title = "Employer Reputation",
-                        EmployerReputationScore = 50,
-                        EmployerFeedback = @"https://nure.ua/wp-content/uploads/Benchmarking/polityka-rivnosti-5.pdf;https://nure.ua/en/public/primary-trade-union-organization/the-labor-dispute-commission-nure",
-                        JobPlacementRate = 32.85,
-                        Year = 2024
-                    }
                 },
                 new()
                 {
                     Title = "Citation",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG1.tupm1ddtR1IbfMC.Tscv?pid=ImgGn",
                     Description = "The Faculty Citations page highlights the research impact of the university's faculty members. It includes detailed statistics on citation counts and influential publications. This page showcases prominent research projects and areas of expertise within the faculty. Information on interdisciplinary collaborations and funded research initiatives is also featured. Testimonials from peers and industry leaders emphasize the significance of the faculty's contributions. This comprehensive overview demonstrates the faculty's influence and leadership in their respective fields.",
-                    Citation = new()
-                    {
-                        CitationCount = 1578,
-                        PublicationCount = 5074,
-                        Title = "Citation",
-                        LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG1.tupm1ddtR1IbfMC.Tscv?pid=ImgGn",
-                        HIndex = 20,
-                        Year = 2024
-                    }
                 },
                 new()
                 {
                     Title = "Employment Result",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4.syCTxzl2_BugaMeV.6iX?pid=ImgGn",
                     Description = "The Employment Results page provides detailed insights into the career outcomes of the university's graduates. It features statistics on employment rates, sectors, and average starting salaries. This page also highlights successful alumni stories and notable career achievements. Information on the university's career services and support programs is included. Additionally, it showcases data on graduate school placements and professional certifications. This comprehensive overview demonstrates the university's effectiveness in preparing students for successful careers.",
-                    EmploymentResult = new()
-                    {
-                        EmploymentRate = 95.91,
-                        LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4.syCTxzl2_BugaMeV.6iX?pid=ImgGn",
-                        AverageSalary = 17456.56,
-                        Title = "Employment Result",
-                        TopEmployers = "Nix;SigmaSoftware;Genesis;SoftServe;Intellias",
-                        EmploymentSectors = "IT;Science;Economy;Cybersecurity;CivilianSecurity",
-                        SurveyYear = 2024
-                    }
                 },
                 new()
                 {
                     Title = "Faculty Student Ratio",
                     LogoUrl = @"https://tse1.mm.bing.net/th/id/OIG1.ebYee3njj0iPVoKMDKMg?pid=ImgGn",
                     Description = "The Faculty-Student Ratio page highlights the personalized educational experience offered at the university. It features detailed statistics on the ratio of faculty members to students. This page emphasizes the benefits of small class sizes and individualized attention. Information on faculty accessibility and mentorship programs is also included. Testimonials from students and alumni underscore the positive impact of close faculty interactions. This comprehensive overview illustrates the university's commitment to providing a supportive and engaging learning environment.",
-                    FacultyStudentRatio = new()
-                    {
-                        Degree = "Bachelor",
-                        LogoUrl = @"https://tse1.mm.bing.net/th/id/OIG1.ebYee3njj0iPVoKMDKMg?pid=ImgGn",
-                        Specialization = "123-Computer engineering",
-                        StudentCount = 7684,
-                        Title = "Faculty Student Ratio",
-                        FemaleAmount = 7684/3,
-                        MaleAmount = 7684-(7684/3)
-                    }
                 },
                 new()
                 {
                     Title = "International Teachers Ratio",
                     LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.uzh1tfnkg7Y2wWrKmhxp?pid=ImgGn",
                     Description = "The International Teachers Ratio page showcases the diverse faculty composition at the university. It provides statistics on the percentage of faculty members from international backgrounds. This page emphasizes the enriching experience of learning from educators with diverse cultural perspectives. Information on faculty exchange programs and international collaborations is highlighted. Additionally, it includes testimonials from students and faculty members about the benefits of a multicultural teaching environment. This comprehensive overview underscores the university's commitment to global engagement and academic excellence.",
-                    InternationalTeachersRatio = new()
-                    {
-                        TeacherCountries = "USA;France;Poland;Italy;Germany;Greece;Tokyo",
-                        SuperiorCountry = "Tokyo",
-                        Title = "International Teachers Ratio",
-                        LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.uzh1tfnkg7Y2wWrKmhxp?pid=ImgGn",
-                        InternationalTeacherAmount = 100,
-                        TeachersAmount = 706
-                    }
                 },
                 new()
                 {
                     Title = "Foreign Student Ratio",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG3.TJWCS3uwK.xlEovaibTJ?pid=ImgGn",
                     Description = "The Foreign Student Ratio page highlights the international diversity within the university's student body. It provides statistics on the percentage of students from foreign countries. This page emphasizes the global learning environment and cultural exchange opportunities available to all students. Information on international student support services and multicultural events is included. Additionally, it features testimonials from current and past international students sharing their experiences. This comprehensive overview illustrates the university's commitment to fostering a welcoming and inclusive campus community.",
-                    ForeignStudentRatio = new()
-                    {
-                        StudentCountries =  "USA;France;Poland;Italy;Germany;Greece;Tokyo",
-                        SuperiorCountry = "USA",
-                        Title = "Foreign Student Ratio",
-                        LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG3.TJWCS3uwK.xlEovaibTJ?pid=ImgGn",
-                        InternationalStudentAmount = 7684,
-                        StudentAmount = 250
-                    }
                 },
                 new()
                 {
                     Title = "Research Network",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4._FA4euGOWd4Nnq6zhlJF?pid=ImgGn",
                     Description = "The Global Education Research Network (GERN) is a collaborative initiative aimed at fostering international cooperation in the field of education research. Our mission is to promote knowledge exchange, facilitate joint research projects, and enhance the global impact of educational research. We believe in the power of shared knowledge and collaboration to address the complex challenges of education in the 21st century.",
-                    ResearchNetwork = new()
-                    {
-                        Name = "Global Education Research Network (GERN)",
-                        Title = "Research Network",
-                        Description = "The Global Education Research Network (GERN) is a collaborative initiative aimed at fostering international cooperation in the field of education research. Our mission is to promote knowledge exchange, facilitate joint research projects, and enhance the global impact of educational research. We believe in the power of shared knowledge and collaboration to address the complex challenges of education in the 21st century.",
-                        CollaboratingOrganizations = "United Nations Educational, Scientific and Cultural Organization (UNESCO);World Bank;British Council;International Council for Open and Distance Education (ICDE);African Educational Research Network (AERN)",
-                        Members = "Dr. Alice Johnson;Prof. Robert Smith;Dr. Emily White;Prof. David Brown;Dr. Olivia Davis;Prof. William Miller",
-                        LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4._FA4euGOWd4Nnq6zhlJF?pid=ImgGn"
-                    }
                 },
                 new()
                 {
                     Title = "Student Stability",
                     LogoUrl = @"https://tse4.mm.bing.net/th/id/OIG2.T.IuNKkNIll51oNq2ZNA?pid=ImgGn",
                     Description = "The Student Stability Amid Conflict page sheds light on the resilience of students facing adversity in their home countries. It presents statistics on the number of students remaining in their countries despite ongoing conflict. This page emphasizes the university's support mechanisms for students affected by war, including counseling services and humanitarian aid initiatives. Information on student-led advocacy efforts and community support networks is also featured. Additionally, it includes testimonials from students sharing their stories of perseverance and determination. This comprehensive overview showcases the university's commitment to providing a safe and supportive environment for all students, especially during challenging times.",
-                    StudentStability = new()
-                    {
-                        CountryName = "Ukraine",
-                        TotalStudents = 7684,
-                        StudentsMoved = 2500,
-                        Title = "Student Stability",
-                        StudentsRemaining = 7684-2500,
-                        OtherDetails = "The war in Ukraine erupted in 2014 following Russia’s annexation of Crimea1. This conflict intensified with Russia’s full-scale invasion, launching air strikes and ground attacks from multiple fronts2. The invasion led to widespread displacement and loss of lives3. Ukraine’s resistance against this military aggression continues, despite being outnumbered and outgunned4. This conflict has significantly strained Ukraine’s relations with Russia and has had profound global implications",
-                        LogoUrl = @"https://tse4.mm.bing.net/th/id/OIG2.T.IuNKkNIll51oNq2ZNA?pid=ImgGn"
-                    }
                 }
             });
             

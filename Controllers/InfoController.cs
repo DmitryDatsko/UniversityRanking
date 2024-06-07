@@ -41,25 +41,7 @@ public class InfoController : ControllerBase
     public async Task<IActionResult> GetSubjectById(int id)
     {
         var data = await _context.MainSubjects
-            .Include(i => i.AcademicReputations)
-            .Include(i => i.EmployerReputation)
-            .Include(i => i.Citation)
-            .Include(i => i.EmploymentResult)
-            .Include(i => i.FacultyStudentRatio)
-            .Include(i => i.InternationalTeachersRatio)
-            .Include(i => i.ForeignStudentRatio)
-            .Include(i => i.ResearchNetwork)
-            .Include(i => i.StudentStability)
-            .Where(ms =>
-                ms.AcademicReputations.MainSubjectId == id ||
-                ms.EmployerReputation.MainSubjectId == id ||
-                ms.Citation.MainSubjectId == id ||
-                ms.EmploymentResult.MainSubjectId == id ||
-                ms.FacultyStudentRatio.MainSubjectId == id ||
-                ms.InternationalTeachersRatio.MainSubjectId == id ||
-                ms.ForeignStudentRatio.MainSubjectId == id ||
-                ms.ResearchNetwork.MainSubjectId == id ||
-                ms.StudentStability.MainSubjectId == id)
+            .Where(ms => ms.Id == id)
             .SingleOrDefaultAsync();
 
         if (data != null)
