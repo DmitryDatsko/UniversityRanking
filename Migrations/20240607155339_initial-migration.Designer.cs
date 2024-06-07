@@ -12,7 +12,7 @@ using UniversityRanking.Data;
 namespace UniversityRanking.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240607152751_initial-migration")]
+    [Migration("20240607155339_initial-migration")]
     partial class initialmigration
     {
         /// <inheritdoc />
@@ -38,10 +38,6 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("AwardsAndRecognitions")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -90,10 +86,6 @@ namespace UniversityRanking.Migrations
                     b.Property<int>("CitationCount")
                         .HasColumnType("int");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("HIndex")
                         .HasColumnType("int");
 
@@ -132,10 +124,6 @@ namespace UniversityRanking.Migrations
 
                     b.Property<double>("AverageSalary")
                         .HasColumnType("float");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmployerFeedback")
                         .IsRequired()
@@ -187,10 +175,6 @@ namespace UniversityRanking.Migrations
                     b.Property<double>("AverageSalary")
                         .HasColumnType("float");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<double>("EmploymentRate")
                         .HasColumnType("float");
 
@@ -236,10 +220,6 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("FemaleAmount")
                         .HasColumnType("int");
 
@@ -279,10 +259,6 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("InternationalStudentAmount")
                         .HasColumnType("int");
@@ -329,10 +305,6 @@ namespace UniversityRanking.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("InternationalTeacherAmount")
                         .HasColumnType("int");
 
@@ -373,6 +345,10 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LogoUrl")
                         .IsRequired()
@@ -439,10 +415,6 @@ namespace UniversityRanking.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CountryName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

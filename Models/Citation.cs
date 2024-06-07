@@ -6,7 +6,6 @@ public class Citation
     public int MainSubjectId { get; set; }
     public MainSubject MainSubject { get; set; } = null!;
     public string LogoUrl { get; set; } = string.Empty;
-    public string Description { get; set; } = string.Empty;
     public string Title { get; set; } = string.Empty;
     public int CitationCount { get; set; }
     public int PublicationCount { get; set; }

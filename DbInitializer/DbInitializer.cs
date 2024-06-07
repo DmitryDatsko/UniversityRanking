@@ -29,9 +29,9 @@ public class DbInitializer : IDbInitializer
                 {
                     LogoUrl = @"https://tse1.mm.bing.net/th?id=OIG2.LDtcZbp9F.Fkxn48kukI&pid=ImgGn",
                     Title = "Academic reputation",
+                    Description = "The Academic Reputation page highlights the university's standing in the academic community. It showcases rankings, research output, and notable faculty achievements. This page also includes information on prestigious awards and recognitions received by the university. Detailed statistics on publication citations and collaborative projects are featured. Testimonials from academic peers and alumni further emphasize the institution's reputation. This comprehensive overview underscores the university's commitment to academic excellence and innovation.",
                     AcademicReputations = new()
                     {
-                        Description = "The Academic Reputation page highlights the university's standing in the academic community. It showcases rankings, research output, and notable faculty achievements. This page also includes information on prestigious awards and recognitions received by the university. Detailed statistics on publication citations and collaborative projects are featured. Testimonials from academic peers and alumni further emphasize the institution's reputation. This comprehensive overview underscores the university's commitment to academic excellence and innovation.",
                         LogoUrl = @"https://tse1.mm.bing.net/th?id=OIG2.LDtcZbp9F.Fkxn48kukI&pid=ImgGn",
                         AcademicReputationScore = 30.82,
                         Title = "Academic reputation",
@@ -46,9 +46,9 @@ public class DbInitializer : IDbInitializer
                 {
                     LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.gGxBjRspfINeQVTbc8Xc?pid=ImgGn",
                     Title = "Employer Reputation",
+                    Description = "The Employer Reputation page underscores the university's strong connections with top employers globally. It features data on graduate employment rates and notable employer partnerships. This page also highlights testimonials from employers who regularly hire graduates from the university. Information on career fairs, internships, and co-op programs is provided. Additionally, it includes statistics on alumni success and career progression. This detailed overview demonstrates the university's commitment to producing highly employable graduates.",
                     EmployerReputation = new()
                     {
-                        Description = "The Employer Reputation page underscores the university's strong connections with top employers globally. It features data on graduate employment rates and notable employer partnerships. This page also highlights testimonials from employers who regularly hire graduates from the university. Information on career fairs, internships, and co-op programs is provided. Additionally, it includes statistics on alumni success and career progression. This detailed overview demonstrates the university's commitment to producing highly employable graduates.",
                         EvidenceUrl = @"https://nure.ua/wp-content/uploads/Benchmarking/4.-rating-and-payment.pdf;https://nure.ua/wp-content/uploads/Benchmarking/nakaz-pro-prodovzhennja-stroku-dii-kolektivnogo-dogovoru.pdf",
                         ExpenditurePerEmployees = 326_346_245.00,
                         LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.gGxBjRspfINeQVTbc8Xc?pid=ImgGn",
@@ -64,9 +64,9 @@ public class DbInitializer : IDbInitializer
                 {
                     Title = "Citation",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG1.tupm1ddtR1IbfMC.Tscv?pid=ImgGn",
+                    Description = "The Faculty Citations page highlights the research impact of the university's faculty members. It includes detailed statistics on citation counts and influential publications. This page showcases prominent research projects and areas of expertise within the faculty. Information on interdisciplinary collaborations and funded research initiatives is also featured. Testimonials from peers and industry leaders emphasize the significance of the faculty's contributions. This comprehensive overview demonstrates the faculty's influence and leadership in their respective fields.",
                     Citation = new()
                     {
-                        Description = "The Faculty Citations page highlights the research impact of the university's faculty members. It includes detailed statistics on citation counts and influential publications. This page showcases prominent research projects and areas of expertise within the faculty. Information on interdisciplinary collaborations and funded research initiatives is also featured. Testimonials from peers and industry leaders emphasize the significance of the faculty's contributions. This comprehensive overview demonstrates the faculty's influence and leadership in their respective fields.",
                         CitationCount = 1578,
                         PublicationCount = 5074,
                         Title = "Citation",
@@ -79,9 +79,9 @@ public class DbInitializer : IDbInitializer
                 {
                     Title = "Employment Result",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4.syCTxzl2_BugaMeV.6iX?pid=ImgGn",
+                    Description = "The Employment Results page provides detailed insights into the career outcomes of the university's graduates. It features statistics on employment rates, sectors, and average starting salaries. This page also highlights successful alumni stories and notable career achievements. Information on the university's career services and support programs is included. Additionally, it showcases data on graduate school placements and professional certifications. This comprehensive overview demonstrates the university's effectiveness in preparing students for successful careers.",
                     EmploymentResult = new()
                     {
-                        Description = "The Employment Results page provides detailed insights into the career outcomes of the university's graduates. It features statistics on employment rates, sectors, and average starting salaries. This page also highlights successful alumni stories and notable career achievements. Information on the university's career services and support programs is included. Additionally, it showcases data on graduate school placements and professional certifications. This comprehensive overview demonstrates the university's effectiveness in preparing students for successful careers.",
                         EmploymentRate = 95.91,
                         LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4.syCTxzl2_BugaMeV.6iX?pid=ImgGn",
                         AverageSalary = 17456.56,
@@ -95,9 +95,9 @@ public class DbInitializer : IDbInitializer
                 {
                     Title = "Faculty Student Ratio",
                     LogoUrl = @"https://tse1.mm.bing.net/th/id/OIG1.ebYee3njj0iPVoKMDKMg?pid=ImgGn",
+                    Description = "The Faculty-Student Ratio page highlights the personalized educational experience offered at the university. It features detailed statistics on the ratio of faculty members to students. This page emphasizes the benefits of small class sizes and individualized attention. Information on faculty accessibility and mentorship programs is also included. Testimonials from students and alumni underscore the positive impact of close faculty interactions. This comprehensive overview illustrates the university's commitment to providing a supportive and engaging learning environment.",
                     FacultyStudentRatio = new()
                     {
-                        Description = "The Faculty-Student Ratio page highlights the personalized educational experience offered at the university. It features detailed statistics on the ratio of faculty members to students. This page emphasizes the benefits of small class sizes and individualized attention. Information on faculty accessibility and mentorship programs is also included. Testimonials from students and alumni underscore the positive impact of close faculty interactions. This comprehensive overview illustrates the university's commitment to providing a supportive and engaging learning environment.",
                         Degree = "Bachelor",
                         LogoUrl = @"https://tse1.mm.bing.net/th/id/OIG1.ebYee3njj0iPVoKMDKMg?pid=ImgGn",
                         Specialization = "123-Computer engineering",
@@ -111,9 +111,9 @@ public class DbInitializer : IDbInitializer
                 {
                     Title = "International Teachers Ratio",
                     LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.uzh1tfnkg7Y2wWrKmhxp?pid=ImgGn",
+                    Description = "The International Teachers Ratio page showcases the diverse faculty composition at the university. It provides statistics on the percentage of faculty members from international backgrounds. This page emphasizes the enriching experience of learning from educators with diverse cultural perspectives. Information on faculty exchange programs and international collaborations is highlighted. Additionally, it includes testimonials from students and faculty members about the benefits of a multicultural teaching environment. This comprehensive overview underscores the university's commitment to global engagement and academic excellence.",
                     InternationalTeachersRatio = new()
                     {
-                        Description = "The International Teachers Ratio page showcases the diverse faculty composition at the university. It provides statistics on the percentage of faculty members from international backgrounds. This page emphasizes the enriching experience of learning from educators with diverse cultural perspectives. Information on faculty exchange programs and international collaborations is highlighted. Additionally, it includes testimonials from students and faculty members about the benefits of a multicultural teaching environment. This comprehensive overview underscores the university's commitment to global engagement and academic excellence.",
                         TeacherCountries = "USA;France;Poland;Italy;Germany;Greece;Tokyo",
                         SuperiorCountry = "Tokyo",
                         Title = "International Teachers Ratio",
@@ -126,9 +126,9 @@ public class DbInitializer : IDbInitializer
                 {
                     Title = "Foreign Student Ratio",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG3.TJWCS3uwK.xlEovaibTJ?pid=ImgGn",
+                    Description = "The Foreign Student Ratio page highlights the international diversity within the university's student body. It provides statistics on the percentage of students from foreign countries. This page emphasizes the global learning environment and cultural exchange opportunities available to all students. Information on international student support services and multicultural events is included. Additionally, it features testimonials from current and past international students sharing their experiences. This comprehensive overview illustrates the university's commitment to fostering a welcoming and inclusive campus community.",
                     ForeignStudentRatio = new()
                     {
-                        Description = "The Foreign Student Ratio page highlights the international diversity within the university's student body. It provides statistics on the percentage of students from foreign countries. This page emphasizes the global learning environment and cultural exchange opportunities available to all students. Information on international student support services and multicultural events is included. Additionally, it features testimonials from current and past international students sharing their experiences. This comprehensive overview illustrates the university's commitment to fostering a welcoming and inclusive campus community.",
                         StudentCountries =  "USA;France;Poland;Italy;Germany;Greece;Tokyo",
                         SuperiorCountry = "USA",
                         Title = "Foreign Student Ratio",
@@ -141,6 +141,7 @@ public class DbInitializer : IDbInitializer
                 {
                     Title = "Research Network",
                     LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4._FA4euGOWd4Nnq6zhlJF?pid=ImgGn",
+                    Description = "The Global Education Research Network (GERN) is a collaborative initiative aimed at fostering international cooperation in the field of education research. Our mission is to promote knowledge exchange, facilitate joint research projects, and enhance the global impact of educational research. We believe in the power of shared knowledge and collaboration to address the complex challenges of education in the 21st century.",
                     ResearchNetwork = new()
                     {
                         Name = "Global Education Research Network (GERN)",
@@ -155,9 +156,9 @@ public class DbInitializer : IDbInitializer
                 {
                     Title = "Student Stability",
                     LogoUrl = @"https://tse4.mm.bing.net/th/id/OIG2.T.IuNKkNIll51oNq2ZNA?pid=ImgGn",
+                    Description = "The Student Stability Amid Conflict page sheds light on the resilience of students facing adversity in their home countries. It presents statistics on the number of students remaining in their countries despite ongoing conflict. This page emphasizes the university's support mechanisms for students affected by war, including counseling services and humanitarian aid initiatives. Information on student-led advocacy efforts and community support networks is also featured. Additionally, it includes testimonials from students sharing their stories of perseverance and determination. This comprehensive overview showcases the university's commitment to providing a safe and supportive environment for all students, especially during challenging times.",
                     StudentStability = new()
                     {
-                        Description = "The Student Stability Amid Conflict page sheds light on the resilience of students facing adversity in their home countries. It presents statistics on the number of students remaining in their countries despite ongoing conflict. This page emphasizes the university's support mechanisms for students affected by war, including counseling services and humanitarian aid initiatives. Information on student-led advocacy efforts and community support networks is also featured. Additionally, it includes testimonials from students sharing their stories of perseverance and determination. This comprehensive overview showcases the university's commitment to providing a safe and supportive environment for all students, especially during challenging times.",
                         CountryName = "Ukraine",
                         TotalStudents = 7684,
                         StudentsMoved = 2500,

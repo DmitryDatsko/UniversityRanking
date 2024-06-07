@@ -7,7 +7,6 @@ public class EmploymentResult
     public MainSubject MainSubject { get; set; } = null!;
     public double EmploymentRate { get; set; }
     public string LogoUrl { get; set; } = string.Empty;
-    public string Description { get; set; } = string.Empty;
     public string Title { get; set; } = string.Empty;
     public double AverageSalary { get; set; }
     public string TopEmployers { get; set; }

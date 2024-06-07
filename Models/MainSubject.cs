@@ -5,6 +5,7 @@ public class MainSubject
     public int Id { get; set; }
     public string LogoUrl { get; set; } = string.Empty;
     public string Title { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
     public AcademicReputation AcademicReputations { get; set; } = null!;
     public EmployerReputation EmployerReputation { get; set; } = null!;
     public Citation Citation { get; set; } = null!;
