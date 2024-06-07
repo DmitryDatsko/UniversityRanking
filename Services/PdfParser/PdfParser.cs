@@ -7,9 +7,10 @@ namespace UniversityRanking.Services.PdfParser;
 
 public static class PdfParser
 {
+    private static readonly string FontPath = Path.Combine(Environment.CurrentDirectory, "Services/PdfParser/DejaVuSans.ttf");
     private const string FilePath = "Services/PdfParser/report.pdf";
-    private static BaseFont _titleFont = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
-    private static BaseFont _contentFont = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
+    private static BaseFont _titleFont = BaseFont.CreateFont(FontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+    private static BaseFont _contentFont = BaseFont.CreateFont(FontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
     public static byte[] FromReportToPdf(ReportParser report)
     {
         using MemoryStream ms = new MemoryStream();
