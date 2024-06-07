@@ -18,19 +18,15 @@ public class ReportController : ControllerBase
         _context = context;
     }
 
-    [HttpGet("get-report/{id}")]
-    public async Task<IActionResult> GetReport(int id)
+    [HttpGet("get-report")]
+    public async Task<IActionResult> GetReport()
     {
         var mainSubject = await _context.MainSubjects
-            .Where(ms => ms.Id == id)
-            .SingleOrDefaultAsync();
+            .OrderBy(ms => ms.Id)
+            .ToListAsync();
 
-        if (mainSubject == null)
-        {
-            return NotFound("Main subject id incorrect");
-        }
-
-        var reports = await _context.Reports.Where(r => r.MainSubjectId == id)
+        var reports = await _context.Reports
+            .OrderBy(r => r.MainSubjectId)
             .ToListAsync();
 
         byte[] pdfBytes = PdfParser.FromReportToPdf(new ReportParser
@@ -39,7 +35,7 @@ public class ReportController : ControllerBase
             Report = reports
         });
 
-        return File(pdfBytes, "application/pdf", $"{mainSubject.Title}_report");
+        return File(pdfBytes, "application/pdf", $"report");
     }
     
     [HttpPost("create-report")]
