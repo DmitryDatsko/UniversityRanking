@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using UniversityRanking.Data;
 using UniversityRanking.DTO;
 using UniversityRanking.Models;
@@ -28,6 +29,11 @@ public class ReportController : ControllerBase
         var reports = await _context.Reports
             .OrderBy(r => r.MainSubjectId)
             .ToListAsync();
+
+        if (reports.IsNullOrEmpty() && mainSubject.IsNullOrEmpty())
+        {
+            return NotFound("Reports not found");
+        }
 
         byte[] pdfBytes = PdfParser.FromReportToPdf(new ReportParser
         {
