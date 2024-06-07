@@ -107,8 +107,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
 SeedDatabase();
 
 app.Run();

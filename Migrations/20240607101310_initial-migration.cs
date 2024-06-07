@@ -18,6 +18,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AcademicReputationScore = table.Column<double>(type: "float", nullable: false),
                     FacultyQuality = table.Column<double>(type: "float", nullable: false),
                     ResearchOutput = table.Column<double>(type: "float", nullable: false),
@@ -38,6 +39,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CitationCount = table.Column<int>(type: "int", nullable: false),
                     PublicationCount = table.Column<int>(type: "int", nullable: false),
                     HIndex = table.Column<int>(type: "int", nullable: false),
@@ -55,6 +57,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EvidenceUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ExpenditurePerEmployees = table.Column<double>(type: "float", nullable: false),
                     EmployerReputationScore = table.Column<double>(type: "float", nullable: false),
@@ -76,6 +79,7 @@ namespace UniversityRanking.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     EmploymentRate = table.Column<double>(type: "float", nullable: false),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AverageSalary = table.Column<double>(type: "float", nullable: false),
                     TopEmployers = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmploymentSectors = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -93,6 +97,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Degree = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Specialization = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MaleAmount = table.Column<int>(type: "int", nullable: false),
@@ -111,6 +116,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StudentCountries = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SuperiorCountry = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StudentAmount = table.Column<int>(type: "int", nullable: false),
@@ -129,6 +135,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeacherCountries = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SuperiorCountry = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeachersAmount = table.Column<int>(type: "int", nullable: false),
@@ -146,6 +153,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Members = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -163,6 +171,7 @@ namespace UniversityRanking.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CountryName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TotalStudents = table.Column<int>(type: "int", nullable: false),
                     LogoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StudentsRemaining = table.Column<int>(type: "int", nullable: false),

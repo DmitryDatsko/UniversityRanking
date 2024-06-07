@@ -4,6 +4,7 @@ public class AcademicReputation
 {
     public int Id { get; set; }
     public string LogoUrl { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
     public double AcademicReputationScore { get; set; }
     public double FacultyQuality { get; set; }
     public double ResearchOutput { get; set; }

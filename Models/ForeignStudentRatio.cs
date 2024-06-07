@@ -4,6 +4,7 @@ public class ForeignStudentRatio
 {
     public int Id { get; set; }
     public string LogoUrl { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
     public string StudentCountries { get; set; } = string.Empty;
     public string SuperiorCountry { get; set; } = string.Empty;
     public int StudentAmount { get; set; }

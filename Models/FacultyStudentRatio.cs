@@ -4,6 +4,7 @@ public class FacultyStudentRatio
 {
     public int Id { get; set; }
     public string LogoUrl { get; set; } = string.Empty;
+    public string Title { get; set; } = string.Empty;
     public string Degree { get; set; } = string.Empty;
     public string Specialization { get; set; }
     public int MaleAmount { get; set; }

@@ -48,6 +48,7 @@ public class DbInitializer : IDbInitializer
             {
                 LogoUrl = @"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brandcrowd.com%2Fblog%2Fharvard-university-logo-history%2F&psig=AOvVaw0B9VEZuDTIyeYmBwz_9Nex&ust=1717798964384000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDM5vqByIYDFQAAAAAdAAAAABAE",
                 AcademicReputationScore = 30.82,
+                Title = "Academic reputation",
                 FacultyQuality = 45.91,
                 StudentSatisfaction = 87.65,
                 InternationalCollaboration = 30.0,
@@ -66,6 +67,7 @@ public class DbInitializer : IDbInitializer
                 ExpenditurePerEmployees = 326_346_245.00,
                 LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.gGxBjRspfINeQVTbc8Xc?pid=ImgGn",
                 AverageSalary = 326_346_245.00/1670,
+                Title = "Employer Reputation",
                 EmployerReputationScore = 50,
                 EmployerFeedback = @"https://nure.ua/wp-content/uploads/Benchmarking/polityka-rivnosti-5.pdf;https://nure.ua/en/public/primary-trade-union-organization/the-labor-dispute-commission-nure",
                 JobPlacementRate = 32.85,
@@ -81,6 +83,7 @@ public class DbInitializer : IDbInitializer
             {
                 CitationCount = 1578,
                 PublicationCount = 5074,
+                Title = "Citation",
                 LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG1.tupm1ddtR1IbfMC.Tscv?pid=ImgGn",
                 HIndex = 20,
                 Year = 2024
@@ -96,6 +99,7 @@ public class DbInitializer : IDbInitializer
                 EmploymentRate = 95.91,
                 LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG4.syCTxzl2_BugaMeV.6iX?pid=ImgGn",
                 AverageSalary = 17456.56,
+                Title = "Employment Result",
                 TopEmployers = "Nix;SigmaSoftware;Genesis;SoftServe;Intellias",
                 EmploymentSectors = "IT;Science;Economy;Cybersecurity;CivilianSecurity",
                 SurveyYear = 2024
@@ -111,6 +115,7 @@ public class DbInitializer : IDbInitializer
                 LogoUrl = @"https://tse1.mm.bing.net/th/id/OIG1.ebYee3njj0iPVoKMDKMg?pid=ImgGn",
                 Specialization = "123-Computer engineering",
                 StudentCount = 7684,
+                Title = "Faculty Student Ratio",
                 FemaleAmount = 7684/3,
                 MaleAmount = 7684-(7684/3)
             });
@@ -124,6 +129,7 @@ public class DbInitializer : IDbInitializer
             {
                 TeacherCountries = "USA;France;Poland;Italy;Germany;Greece;Tokyo",
                 SuperiorCountry = "Tokyo",
+                Title = "International Teachers Ratio",
                 LogoUrl = @"https://tse3.mm.bing.net/th/id/OIG3.uzh1tfnkg7Y2wWrKmhxp?pid=ImgGn",
                 InternationalTeacherAmount = 100,
                 TeachersAmount = 706
@@ -137,6 +143,7 @@ public class DbInitializer : IDbInitializer
             {
                 StudentCountries =  "USA;France;Poland;Italy;Germany;Greece;Tokyo",
                 SuperiorCountry = "USA",
+                Title = "Foreign Student Ratio",
                 LogoUrl = @"https://tse2.mm.bing.net/th/id/OIG3.TJWCS3uwK.xlEovaibTJ?pid=ImgGn",
                 InternationalStudentAmount = 7684,
                 StudentAmount = 250
@@ -149,6 +156,7 @@ public class DbInitializer : IDbInitializer
             _context.ResearchNetworks.Add(new ResearchNetwork
             {
                 Name = "Global Education Research Network (GERN)",
+                Title = "Research Network",
                 Description = "The Global Education Research Network (GERN) is a collaborative initiative aimed at fostering international cooperation in the field of education research. Our mission is to promote knowledge exchange, facilitate joint research projects, and enhance the global impact of educational research. We believe in the power of shared knowledge and collaboration to address the complex challenges of education in the 21st century.",
                 CollaboratingOrganizations = "United Nations Educational, Scientific and Cultural Organization (UNESCO);World Bank;British Council;International Council for Open and Distance Education (ICDE);African Educational Research Network (AERN)",
                 Members = "Dr. Alice Johnson;Prof. Robert Smith;Dr. Emily White;Prof. David Brown;Dr. Olivia Davis;Prof. William Miller",
@@ -164,6 +172,7 @@ public class DbInitializer : IDbInitializer
                 CountryName = "Ukraine",
                 TotalStudents = 7684,
                 StudentsMoved = 2500,
+                Title = "Student Stability",
                 StudentsRemaining = 7684-2500,
                 OtherDetails = "The war in Ukraine erupted in 2014 following Russia’s annexation of Crimea1. This conflict intensified with Russia’s full-scale invasion, launching air strikes and ground attacks from multiple fronts2. The invasion led to widespread displacement and loss of lives3. Ukraine’s resistance against this military aggression continues, despite being outnumbered and outgunned4. This conflict has significantly strained Ukraine’s relations with Russia and has had profound global implications",
                 LogoUrl = @"https://tse4.mm.bing.net/th/id/OIG2.T.IuNKkNIll51oNq2ZNA?pid=ImgGn",

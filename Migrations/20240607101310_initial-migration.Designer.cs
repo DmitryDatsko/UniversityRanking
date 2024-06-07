@@ -12,7 +12,7 @@ using UniversityRanking.Data;
 namespace UniversityRanking.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240606231030_initial-migration")]
+    [Migration("20240607101310_initial-migration")]
     partial class initialmigration
     {
         /// <inheritdoc />
@@ -57,6 +57,10 @@ namespace UniversityRanking.Migrations
                     b.Property<double>("StudentSatisfaction")
                         .HasColumnType("float");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Year")
                         .HasColumnType("int");
 
@@ -85,6 +89,10 @@ namespace UniversityRanking.Migrations
 
                     b.Property<int>("PublicationCount")
                         .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Year")
                         .HasColumnType("int");
@@ -126,6 +134,10 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Year")
                         .HasColumnType("int");
 
@@ -158,6 +170,10 @@ namespace UniversityRanking.Migrations
 
                     b.Property<int>("SurveyYear")
                         .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TopEmployers")
                         .IsRequired()
@@ -197,6 +213,10 @@ namespace UniversityRanking.Migrations
                     b.Property<int>("StudentCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("FacultyStudentRatios");
@@ -225,6 +245,10 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SuperiorCountry")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -263,6 +287,10 @@ namespace UniversityRanking.Migrations
                     b.Property<int>("TeachersAmount")
                         .HasColumnType("int");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("InternationalTeachersRatios");
@@ -296,6 +324,10 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("ResearchNetworks");
@@ -326,6 +358,10 @@ namespace UniversityRanking.Migrations
 
                     b.Property<int>("StudentsRemaining")
                         .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TotalStudents")
                         .HasColumnType("int");
