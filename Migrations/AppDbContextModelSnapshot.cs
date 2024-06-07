@@ -48,6 +48,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<double>("ResearchOutput")
                         .HasColumnType("float");
 
@@ -62,6 +65,9 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
 
                     b.ToTable("AcademicReputations");
                 });
@@ -84,6 +90,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<int>("PublicationCount")
                         .HasColumnType("int");
 
@@ -95,6 +104,9 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
 
                     b.ToTable("Citations");
                 });
@@ -131,6 +143,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -139,6 +154,9 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
 
                     b.ToTable("EmployerReputations");
                 });
@@ -165,6 +183,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<int>("SurveyYear")
                         .HasColumnType("int");
 
@@ -177,6 +198,9 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
 
                     b.ToTable("EmploymentResults");
                 });
@@ -200,6 +224,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<int>("MaleAmount")
                         .HasColumnType("int");
 
@@ -215,6 +242,9 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
 
                     b.ToTable("FacultyStudentRatios");
                 });
@@ -233,6 +263,9 @@ namespace UniversityRanking.Migrations
                     b.Property<string>("LogoUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
 
                     b.Property<int>("StudentAmount")
                         .HasColumnType("int");
@@ -255,6 +288,9 @@ namespace UniversityRanking.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
+
                     b.ToTable("ForeignStudentRatios");
                 });
 
@@ -273,6 +309,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SuperiorCountry")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -290,7 +329,31 @@ namespace UniversityRanking.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
+
                     b.ToTable("InternationalTeachersRatios");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.MainSubject", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("LogoUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MainSubjects");
                 });
 
             modelBuilder.Entity("UniversityRanking.Models.ResearchNetwork", b =>
@@ -313,6 +376,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Members")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -326,6 +392,9 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
 
                     b.ToTable("ResearchNetworks");
                 });
@@ -346,6 +415,9 @@ namespace UniversityRanking.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("MainSubjectId")
+                        .HasColumnType("int");
+
                     b.Property<string>("OtherDetails")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -364,6 +436,9 @@ namespace UniversityRanking.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainSubjectId")
+                        .IsUnique();
 
                     b.ToTable("StudentStability");
                 });
@@ -463,6 +538,135 @@ namespace UniversityRanking.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.AcademicReputation", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("AcademicReputations")
+                        .HasForeignKey("UniversityRanking.Models.AcademicReputation", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.Citation", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("Citation")
+                        .HasForeignKey("UniversityRanking.Models.Citation", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.EmployerReputation", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("EmployerReputation")
+                        .HasForeignKey("UniversityRanking.Models.EmployerReputation", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.EmploymentResult", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("EmploymentResult")
+                        .HasForeignKey("UniversityRanking.Models.EmploymentResult", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.FacultyStudentRatio", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("FacultyStudentRatio")
+                        .HasForeignKey("UniversityRanking.Models.FacultyStudentRatio", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.ForeignStudentRatio", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("ForeignStudentRatio")
+                        .HasForeignKey("UniversityRanking.Models.ForeignStudentRatio", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.InternationalTeachersRatio", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("InternationalTeachersRatio")
+                        .HasForeignKey("UniversityRanking.Models.InternationalTeachersRatio", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.ResearchNetwork", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("ResearchNetwork")
+                        .HasForeignKey("UniversityRanking.Models.ResearchNetwork", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.StudentStability", b =>
+                {
+                    b.HasOne("UniversityRanking.Models.MainSubject", "MainSubject")
+                        .WithOne("StudentStability")
+                        .HasForeignKey("UniversityRanking.Models.StudentStability", "MainSubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainSubject");
+                });
+
+            modelBuilder.Entity("UniversityRanking.Models.MainSubject", b =>
+                {
+                    b.Navigation("AcademicReputations")
+                        .IsRequired();
+
+                    b.Navigation("Citation")
+                        .IsRequired();
+
+                    b.Navigation("EmployerReputation")
+                        .IsRequired();
+
+                    b.Navigation("EmploymentResult")
+                        .IsRequired();
+
+                    b.Navigation("FacultyStudentRatio")
+                        .IsRequired();
+
+                    b.Navigation("ForeignStudentRatio")
+                        .IsRequired();
+
+                    b.Navigation("InternationalTeachersRatio")
+                        .IsRequired();
+
+                    b.Navigation("ResearchNetwork")
+                        .IsRequired();
+
+                    b.Navigation("StudentStability")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

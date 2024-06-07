@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using UniversityRanking.Data;
 
 namespace UniversityRanking.Controllers;
@@ -15,6 +16,19 @@ public class InfoController : ControllerBase
         _context = context;
     }
 
+    [HttpGet("get-all-subjects")]
+    public async Task<IActionResult> GetAllSubjects()
+    {
+        var subjects = await _context.MainSubjects.ToListAsync();
+
+        if (subjects.IsNullOrEmpty())
+        {
+            return NotFound("Main subjects not found");
+        }
+        
+        return Ok(subjects);
+    }
+    
     [HttpGet("mainUniversity")]
     public async Task<IActionResult> GetMainUniversity()
     {

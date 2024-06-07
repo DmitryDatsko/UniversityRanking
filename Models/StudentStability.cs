@@ -3,6 +3,8 @@
 public class StudentStability
 {
     public int Id { get; set; }
+    public int MainSubjectId { get; set; }
+    public MainSubject MainSubject { get; set; } = null!;
     public string CountryName { get; set; } = string.Empty;
     public string Title { get; set; } = string.Empty;
     public int TotalStudents { get; set; }
